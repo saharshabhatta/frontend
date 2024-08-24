@@ -1,0 +1,108 @@
+.contact-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: #4A6B82; /* Adjust color according to the image */
+    border-radius: 10px;
+    width: 60%;
+    margin: 0 auto;
+}
+
+.find-us {
+    color: #FFFFFF; /* White text */
+    flex: 1;
+    margin-right: 20px;
+}
+
+.find-us h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.find-us .location, .find-us .contact {
+    margin-bottom: 20px;
+}
+
+.find-us p {
+    margin: 5px 0;
+    font-size: 16px;
+}
+
+.contact-form {
+    background-color: #F0F6FC; 
+    padding: 20px;
+    border-radius: 10px;
+    flex: 1;
+}
+
+.contact-form h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #4A6B82;
+}
+
+.contact-form form {
+    display: flex;
+    flex-direction: column;
+}
+
+
+.contact-form textarea {
+    height: 100px;
+    resize: none;
+}
+
+.contact-form button {
+    padding: 10px;
+    background-color: #F0F6FC;
+    color: #000000;
+    border: solid;
+    border-radius: 50px;
+    font-size: 16px;
+    cursor: pointer;
+    width: 40%;
+}
+
+.contact-form button:hover {
+    background-color: #F0F6FC;;
+}
+
+.input-container {
+    position: relative;
+    margin-bottom: 30px; 
+    width: 100%;
+}
+
+.input-container input {
+    width: 90%;
+    padding: 20px 10px 10px 10px; 
+    border: 2px solid black;
+    border-radius: 20px;
+    font-size: 16px;
+    outline: none;
+    background-color: #f0f4f8; /* Light background color */
+}
+
+.input-container label {
+    position: absolute;
+    top: 10px; /* Adjust to position the label higher */
+    left: 15px; /* Adjust the left position */
+    font-size: 18px;
+    color: black;
+    pointer-events: none;
+    transition: all 0.3s ease;
+}
+
+.input-container input:focus + label,
+.input-container input:not(:placeholder-shown) + label {
+    top: -10px; /* Move the label up */
+    left: 10px;
+    font-size: 16px;
+    color: #4A6B82;
+    background-color: #f0f4f8; /* Background to match the input field */
+    padding: 0 5px;
+}
+
+.input-container input:focus {
+    border-color: #4A6B82;
+}
